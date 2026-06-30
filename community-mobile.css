@@ -199,6 +199,6 @@ body{background:#d8dae2;-webkit-font-smoothing:antialiased;text-rendering:optimi
     padding-bottom: max(20px, env(safe-area-inset-bottom));
   }
   .app:not(.device-stage) .cm-top {
-    padding-top: max(54px, env(safe-area-inset-top));
+    padding-top: calc(env(safe-area-inset-top, 0px) + 10px);
   }
 }

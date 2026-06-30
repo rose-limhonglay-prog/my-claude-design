@@ -340,7 +340,7 @@ body{background:#d8dae2;display:flex;align-items:flex-start;justify-content:cent
     padding-bottom: max(20px, env(safe-area-inset-bottom));
   }
   .app:not(.device-stage) .m-top {
-    padding-top: max(52px, env(safe-area-inset-top));
+    padding-top: calc(env(safe-area-inset-top, 0px) + 10px);
   }
   .app:not(.device-stage) .m-fab {
     bottom: calc(80px + env(safe-area-inset-bottom, 0px));
