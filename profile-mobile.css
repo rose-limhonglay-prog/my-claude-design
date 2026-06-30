@@ -161,16 +161,18 @@ img{max-width:100%}
 .twk-panel{font-family:ui-sans-serif,system-ui,sans-serif}
 
 /* ===== Native mobile mode (no device frame — real phone browser) ===== */
-.app:not(.device-stage) {
-  min-height: 100dvh;
-  min-height: 100vh;
+.app:not(.device-stage) .pm-tabs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
 }
-.app:not(.device-stage) .pm-screen {
-  min-height: 100dvh;
-  min-height: 100vh;
-  max-width: 100vw;
+.app:not(.device-stage) .pm-scroll {
+  padding-bottom: 90px;
 }
 @media (max-width: 768px) {
-  html, body { background: var(--surface-card) !important; }
+  html, body { background: var(--surface-card) !important; padding: 0 !important; }
   .app.device-stage { display: none !important; }
 }
